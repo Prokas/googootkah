@@ -40,7 +40,7 @@ nice_view_spi: &spi0 {
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <36>;
+        columns = <24>;
         rows = <1>;
         map = <
                      RC(0,0)  RC(0,1)  RC(0,2)  RC(0,3)                      RC(0,14) RC(0,15) RC(0,16) RC(0,17)  

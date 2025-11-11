@@ -102,7 +102,7 @@
       ╰────────────────────────╯╰────────────────────────╯
     */
 
-    combos {
+    /*combos {
         compatible = "zmk,combos";
 
         #define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT, LAYERS) \
@@ -140,9 +140,9 @@
         COMBO(num_bspc  , &kp BSPC  , 6  16, DEFAULT_TIME, NUM           )
         COMBO(num_comma , &kp COMMA , 7  17, DEFAULT_TIME, NUM           )
         COMBO(num_space , &kp SPACE , 8  18, DEFAULT_TIME, NUM           )
-    };
+    };*/
 
-    behaviors {
+    /*behaviors {
         bt_sel: tap_dance_bluetooth_select {
             compatible = "zmk,behavior-tap-dance";
             label = "BLUETOOTH_SELECT";
@@ -245,9 +245,9 @@
             tapping-term-ms = <250>;
             bindings = <&mo>, <&esc_tab>;
         };
-    };
+    };*/
 
-    macros {
+    /*macros {
         // No way to cancel sticky keys so using F24 as a NOOP proxy
         // Bailing out of any sticky keyboard state macro
         bail: macro_bail {
@@ -263,7 +263,7 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp F24>;
         };
-    };
+    };*/
 };
 
 &sl { release-after-ms = <800>; no-sticky-after-hold-ms = <400>; };
