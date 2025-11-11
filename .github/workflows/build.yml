@@ -1,4 +1,4 @@
-name: Build Firmware
+name: Build Googootkah Firmware
 
 on:
   push:
@@ -7,14 +7,38 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup West
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python & West
         run: |
+          python3 -m pip install --upgrade pip
           pip3 install west
-          west init -l app
+
+      - name: Initialize West and fetch dependencies
+        run: |
+          west init -l .
           west update
-      - name: Build left
-        run: west build -p -b nice_nano_v2 -- -DSHIELD=googootkah_left
-      - name: Build right
-        run: west build -p -b nice_nano_v2 -- -DSHIELD=googootkah_right
+          west zephyr-export
+
+      - name: Build LEFT half
+        run: |
+          west build -s zmk/app -d build/left -b nice_nano_v2 -- -DSHIELD=googootkah_left
+
+      - name: Upload LEFT firmware artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: googootkah_left.uf2
+          path: build/left/zephyr/zmk.uf2
+
+      - name: Build RIGHT half
+        run: |
+          west build -s zmk/app -d build/right -b nice_nano_v2 -- -DSHIELD=googootkah_right
+
+      - name: Upload RIGHT firmware artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: googootkah_right.uf2
+          path: build/right/zephyr/zmk.uf2
