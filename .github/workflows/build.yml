@@ -12,27 +12,21 @@ jobs:
 
     steps:
       # Checkout repozitorijuma
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      # Instalacija zavisnosti
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y python3-pip git ninja-build gperf ccache dfu-util device-tree-compiler wget curl xz-utils file
-          pip3 install --user west
+      # Setup Zephyr + ZMK environment preko ZMK GitHub Action
+      - uses: zmkfirmware/setup-zmk@main
+        with:
+          zmk-version: main
 
       # Build leve polovine
-      - name: Build left half
-        run: west build -s app -d build/left -b nice_nano_v2
+      - run: west build -s app -d build/left -b nice_nano_v2
 
       # Build desne polovine
-      - name: Build right half
-        run: west build -s app -d build/right -b nice_nano_v2
+      - run: west build -s app -d build/right -b nice_nano_v2
 
-      # Upload artefakata (.uf2 fajlova) koristeći v4
-      - name: Upload UF2 files
-        uses: actions/upload-artifact@v4
+      # Upload artefakata (.uf2 fajlova)
+      - uses: actions/upload-artifact@v4
         with:
           name: googootkah-uf2
           path: |
