@@ -91,7 +91,7 @@ combo_##NAME { \
         COMBO(z, &kp Y, 4 5)
         COMBO(v, &kp Q, 0 1)
         COMBO(enter, &kp ENTER, 21 23)
-        COMBO(esc, &kp ESC, 19 20)
+        COMBO(esc, &kp ESC, 18 19)
 /* parentheticals */
         COMBO(lbrc, &kp LBRC, 0 9)
         COMBO(lbkt, &kp LBKT, 1 10)
