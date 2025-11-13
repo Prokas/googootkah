@@ -90,12 +90,8 @@ combo_##NAME { \
 /* usually on base layer */
         COMBO(z, &kp Y, 4 5)
         COMBO(v, &kp Q, 0 1)
-        COMBO(sch, &macro_sch, 0 2)
-        COMBO(slash, &kp SLASH, 22 23)
-        COMBO(dash, &kp MINUS, 21 22)
-//        COMBO(enter, &kp ENTER, 21 22 23)
-        COMBO(enter, &kp ENTER, 25 23)
-        COMBO(esc, &kp ESC, 9 11)
+        COMBO(enter, &kp ENTER, 25 24)
+        COMBO(esc, &kp ESC, 10 11)
 /* parentheticals */
         COMBO(lbrc, &kp LBRC, 0 9)
         COMBO(lbkt, &kp LBKT, 1 10)
