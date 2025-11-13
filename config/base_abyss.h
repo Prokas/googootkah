@@ -94,8 +94,8 @@ combo_##NAME { \
         COMBO(slash, &kp SLASH, 22 23)
         COMBO(dash, &kp MINUS, 21 22)
 //        COMBO(enter, &kp ENTER, 21 22 23)
-        COMBO(enter, &kp ENTER, 21 23)
-        COMBO(esc, &kp ESC, 19 20)
+        COMBO(enter, &kp ENTER, 25 23)
+        COMBO(esc, &kp ESC, 9 11)
 /* parentheticals */
         COMBO(lbrc, &kp LBRC, 0 9)
         COMBO(lbkt, &kp LBKT, 1 10)
@@ -105,10 +105,6 @@ combo_##NAME { \
         COMBO(rpar, &kp RPAR, 5 14)
         COMBO(rbkt, &kp RBKT, 6 15)
         COMBO(rbrc, &kp RBRC, 7 16)
-/* deletion */
-        COMBO(bspc, &kp BSPC, 5 6)
-        COMBO(del, &kp DEL, 6 7)
-        COMBO(delword, &kp LC(BSPC), 5 7)
 /* alternative shifting */
 /*
         COMBO(Sq, &kp LS(Q), 1 2 25)
