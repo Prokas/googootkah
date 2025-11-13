@@ -88,13 +88,8 @@ combo_##NAME { \
     combos {
         compatible = "zmk,combos";
 /* usually on base layer */
-        COMBO(q, &kp Q, 1 2)
         COMBO(z, &kp Y, 4 5)
         COMBO(v, &kp Q, 0 1)
-        COMBO(_ae, &kp RA(A), 15 26)
-        COMBO(_oe, &kp RA(O), 17 26)
-        COMBO(_ue, &kp RA(U), 6 26)
-        COMBO(_sz, &kp RA(S), 9 25)
         COMBO(sch, &macro_sch, 0 2)
         COMBO(slash, &kp SLASH, 22 23)
         COMBO(dash, &kp MINUS, 21 22)
