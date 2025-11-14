@@ -1,7 +1,6 @@
 
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#endif
 
 #include "base_abyss.h"
 
@@ -68,10 +67,7 @@
                    &kp LC(LG(Q))       &trans          &trans          &none  &none    &trans         &trans         &trans             &kp F1         &kp F2         &kp F3  &kp F10
               >;
          };
-                                            
-
-    };
-};
+                                        
 
 //     __________________________  __________________________
 //    /     1  |  2  |  3  |  4  \/   5 |   6 |   7 |   8    \
