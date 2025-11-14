@@ -16,20 +16,6 @@
 };
 
 / {
-    macros {
-        macro_sch: macro_sch {
-            label = "Macro_sch";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-        		    &macro_tap &kp S
-        		    &macro_release &kp RSHIFT
-        		    &macro_tap &kp C &kp H
-	          >;
-        };
-    };
-};
-/ {
   macros {
     ipad_tile_left: ipad_tile_left {
       label = "iPad Tile Left";
