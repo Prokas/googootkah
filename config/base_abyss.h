@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define APT 0
+#define DEF 0
 #define NUM 1
 #define NAV 2
 #define SYM 3
