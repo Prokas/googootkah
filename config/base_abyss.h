@@ -80,7 +80,7 @@ combo_##NAME { \
         COMBO(z, &kp Y, 4 5)
         COMBO(v, &kp Q, 0 1)
         COMBO(e, &kp E, 2 3)
-        COMBO(?, &kp QMARK, 25 26)
+        COMBO(question, &kp QMARK, 25 26)
         COMBO(enter, &kp ENTER, 24 26)
         COMBO(esc, &kp ESC, 18 19)
 /* parentheticals */
