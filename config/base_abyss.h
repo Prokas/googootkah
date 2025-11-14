@@ -76,7 +76,7 @@ combo_##NAME { \
 /* base layer */
         COMBO(z, &kp Y, 4 5)
         COMBO(v, &kp Q, 0 1)
-        COMBO(e, &kp E, 1 2)
+        COMBO(e, &kp E, 2 3)
         COMBO(enter, &kp ENTER, 24 26)
         COMBO(esc, &kp ESC, 18 19)
 /* parentheticals */
