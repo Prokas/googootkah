@@ -34,7 +34,7 @@
             label = "NUM";
 
             bindings = <
-                                  &kp TAB            &none                &none              &kp LG(TAB)        &none           &kp N7         &kp N8         &kp N9
+                                  &kp TAB            &none                &none              &kp F3        &none           &kp N7         &kp N8         &kp N9
                                   &hl LALT KP_MINUS &hl LGUI KP_ASTERISK &hl LSHFT KP_SLASH &kp RALT       &none          &kp N4         &kp N5         &kp N6        
                       &hl LCTRL KP_PLUS     &none    &none     &none         &trans         &trans      &none          &kp N0         &kp N1         &kp N2         &kp N3  &none
                                                             
