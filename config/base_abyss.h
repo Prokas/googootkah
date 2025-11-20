@@ -107,7 +107,7 @@ combo_##NAME { \
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <100>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
