@@ -17,3 +17,9 @@ manifest:
       import: app/west.yml
   self:
     path: config
+    import:
+      name-allowlist:
+        - zephyr
+      map:
+        zephyr:
+          revision: v3.5.0
